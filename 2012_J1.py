@@ -1,3 +1,4 @@
+# CCC Junior 2012 Problem 1
 # Prompt user for speed limit and recorded speed of car
 speed_limit = raw_input("Enter the speed limit: ")
 car_speed = raw_input("Enter the recorded speed of the car: ")
