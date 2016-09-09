@@ -19,17 +19,20 @@ def create_scaled_icon(f):
     print()
 
 
-k = raw_input()
+def main():
+  k = raw_input()
 
-try:
-  k = int(k)
-except TypeError:
-  TypeError("scaling factor must be of type int")
-  
-if type(k) == int:
-  if k > 0 and k < 25:
-    create_scaled_icon(k)
+  try:
+    k = int(k)
+  except TypeError:
+    TypeError("scaling factor must be of type int")
+
+  if type(k) == int:
+    if k > 0 and k < 25:
+      create_scaled_icon(k)
+    else:
+      print("scaling factor must be greater than 0 and smaller than 25")
   else:
-    print("scaling factor must be greater than 0 and smaller than 25")
-else:
-  print("scaling factor is not an integer")
+    print("scaling factor is not an integer")
+    
+main()

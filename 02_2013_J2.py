@@ -18,6 +18,9 @@ def can_rotate(w):
   if is_ok:
     print "YES"
 
-word = raw_input('Enter potential sign word: ')
-can_rotate(word)
+def main():
+  word = raw_input('Enter potential sign word: ')
+  can_rotate(word)
+  
+main()
 

@@ -20,21 +20,22 @@ def check_date(month,day):
   else:
     print "After"
     
-user_month = raw_input("Please enter the month:")
-user_day = raw_input("Please enter the day:")
+def main():
+  user_month = raw_input("Please enter the month:")
+  user_day = raw_input("Please enter the day:")
 
-print 3 *+ 4 +- 2 
+  try:
+    user_month = int(user_month)
+    user_day = int(user_day)
+  except ValueError:
+    ValueError("Please try again using integers")
 
-try:
-  user_month = int(user_month)
-  user_day = int(user_day)
-except ValueError:
-  ValueError("Please try again using integers")
-  
-if type(user_month) == int and type(user_day) == int:
-  if user_month <= 12 and user_day <= 31:
-    check_date(user_month, user_day)
+  if type(user_month) == int and type(user_day) == int:
+    if user_month <= 12 and user_day <= 31:
+      check_date(user_month, user_day)
+    else:
+      print "Inputs were not valid month, day integers."
   else:
-    print "Inputs were not valid month, day integers."
-else:
-  print "Inputs were not integers, please try again."
+    print "Inputs were not integers, please try again."
+    
+main()

@@ -1,7 +1,4 @@
 # CCC Junior 2012 Problem 1
-# Prompt user for speed limit and recorded speed of car
-speed_limit = raw_input("Enter the speed limit: ")
-car_speed = raw_input("Enter the recorded speed of the car: ")
 
 # Check types
 def check_input(value):
@@ -40,12 +37,17 @@ def check_fine(limit, speed):
   else:
     print "problem"
   
+def main():
+  # Prompt user for speed limit and recorded speed of car
+  speed_limit = raw_input("Enter the speed limit: ")
+  car_speed = raw_input("Enter the recorded speed of the car: ")
 
-# Call functions
-speed_limit = check_input(speed_limit)
-car_speed = check_input(car_speed)
+  speed_limit = check_input(speed_limit)
+  car_speed = check_input(car_speed)
 
-if type(speed_limit) ==  int and type (car_speed) == int:
-  check_fine(speed_limit, car_speed)
-else:
-  print "Please retry with integers as the limit and car speed"
+  if type(speed_limit) ==  int and type (car_speed) == int:
+    check_fine(speed_limit, car_speed)
+  else:
+    print "Please retry with integers as the limit and car speed"
+    
+main()
