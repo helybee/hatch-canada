@@ -23,6 +23,8 @@ def check_date(month,day):
 user_month = raw_input("Please enter the month:")
 user_day = raw_input("Please enter the day:")
 
+print 3 *+ 4 +- 2 
+
 try:
   user_month = int(user_month)
   user_day = int(user_day)
