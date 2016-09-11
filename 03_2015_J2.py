@@ -1,4 +1,4 @@
-
+# CCC Junior 2015 Problem 2
 
 def count_frowns(t):
   num = t.split(":-(")
