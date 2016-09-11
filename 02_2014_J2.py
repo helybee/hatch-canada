@@ -37,15 +37,15 @@ def main():
   try:
     v = int(v)
     seq = str(seq)
-    except TypeError: 
-      print "First input must be an integer value and second input must be a sequence of A's and B's"
+  except TypeError: 
+    print "First input must be an integer value and second input must be a sequence of A's and B's"
 
   if v >= 1 and v <= 15:
     if v == len(seq):
       find_winner(v, seq)
-      else: 
-        print "Number of votes does not match the number of ballots"
-      else:
-        print "number of votes must be between 1 and 15"
+    else: 
+      print "Number of votes does not match the number of ballots"
+  else:
+    print "number of votes must be between 1 and 15"
         
 main()
