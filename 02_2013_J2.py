@@ -1,4 +1,4 @@
-# CCC Junior 2013 Problem 2013
+# CCC Junior 2013 Problem 2
 # Rotating Letters
 # An artist wants to construct a sign whose letters will rotate freely in the breeze. 
 # In order to do this, she must only use letters that are not changed by rotation of 180 degrees: I, O, S, H, Z, X, and N.
